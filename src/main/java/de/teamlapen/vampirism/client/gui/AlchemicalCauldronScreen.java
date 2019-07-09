@@ -12,13 +12,13 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 
 
 @OnlyIn(Dist.CLIENT)
-public class GuiAlchemicalCauldron extends ContainerScreen {
+public class AlchemicalCauldronScreen extends ContainerScreen {
     private static final ResourceLocation BACKGROUND = new ResourceLocation("vampirism:textures/gui/alchemical_cauldron.png");
 
     private final IInventory cauldron;
     private final PlayerInventory playerInventory;
 
-    public GuiAlchemicalCauldron(PlayerInventory inventoryPlayer, InventorySlot.IInventorySlotInventory tile) {
+    public AlchemicalCauldronScreen(PlayerInventory inventoryPlayer, InventorySlot.IInventorySlotInventory tile) {
         super(new AlchemicalCauldronContainer(inventoryPlayer, tile));
         cauldron = tile;
         playerInventory = inventoryPlayer;

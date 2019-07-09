@@ -46,7 +46,7 @@ import java.util.Random;
  * Inspired by Minecraft's old GuiAchievement
  */
 @OnlyIn(Dist.CLIENT)
-public class GuiSkills extends Screen implements GuiYesNoCallback {
+public class SkillsScreen extends Screen implements GuiYesNoCallback {
     private static final ResourceLocation BACKGROUND = new ResourceLocation(REFERENCE.MODID, "textures/gui/skills_window.png");
     private static final ResourceLocation defaultIcons = new ResourceLocation(REFERENCE.MODID, "textures/gui/skills.png");
     private final static int ICON_TEXTURE_WIDTH = 256;
@@ -197,7 +197,7 @@ public class GuiSkills extends Screen implements GuiYesNoCallback {
         this.buttons.add(new Button(1, this.width / 2 + 24, this.height / 2 + 74, 80, 20, UtilLib.translate("gui.done")) {
             @Override
             public void onClick(double mouseX, double mouseY) {
-                GuiSkills.this.close();
+                SkillsScreen.this.close();
             }
         });
         if (display) {
@@ -205,7 +205,7 @@ public class GuiSkills extends Screen implements GuiYesNoCallback {
                 @Override
                 public void onClick(double mouseX, double mouseY) {
                     boolean test = VampirismMod.inDev || VampirismMod.instance.getVersionInfo().getCurrentVersion().isTestVersion();
-                    ConfirmScreen resetGui = new ConfirmScreen(GuiSkills.this, UtilLib.translate("gui.vampirism.reset_skills.title"), UtilLib.translate("gui.vampirism.reset_skills." + (test ? "desc_test" : "desc")), 10);
+                    ConfirmScreen resetGui = new ConfirmScreen(SkillsScreen.this, UtilLib.translate("gui.vampirism.reset_skills.title"), UtilLib.translate("gui.vampirism.reset_skills." + (test ? "desc_test" : "desc")), 10);
                     Minecraft.getInstance().displayGuiScreen(resetGui);
                 }
             };

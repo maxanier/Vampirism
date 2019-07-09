@@ -1,6 +1,6 @@
 package de.teamlapen.vampirism.client.gui;
 
-import de.teamlapen.vampirism.blocks.BlockWeaponTable;
+import de.teamlapen.vampirism.blocks.WeaponTableBlock;
 import de.teamlapen.vampirism.inventory.HunterWeaponTableContainer;
 import de.teamlapen.vampirism.util.REFERENCE;
 import net.minecraft.block.BlockState;
@@ -17,7 +17,7 @@ import net.minecraftforge.api.distmarker.OnlyIn;
  * Gui for the weapon table. Only draws the background and the lava status
  */
 @OnlyIn(Dist.CLIENT)
-public class GuiHunterWeaponTable extends ContainerScreen {
+public class HunterWeaponTableScreen extends ContainerScreen {
 
     private static final ResourceLocation TABLE_GUI_TEXTURES = new ResourceLocation(REFERENCE.MODID, "textures/gui/weapon_table.png");
     private static final ResourceLocation TABLE_GUI_TEXTURES_LAVA = new ResourceLocation(REFERENCE.MODID, "textures/gui/weapon_table_lava.png");
@@ -27,7 +27,7 @@ public class GuiHunterWeaponTable extends ContainerScreen {
     private int lava = 0;
     private boolean isMissingLava = false;
 
-    public GuiHunterWeaponTable(PlayerInventory inventoryPlayer, World world, BlockPos pos) {
+    public HunterWeaponTableScreen(PlayerInventory inventoryPlayer, World world, BlockPos pos) {
         super(new HunterWeaponTableContainer(inventoryPlayer, world, pos));
         this.xSize = 196;
         this.ySize = 191;
@@ -46,8 +46,8 @@ public class GuiHunterWeaponTable extends ContainerScreen {
     public void tick() {
         super.tick();
         BlockState blockState = this.world.getBlockState(pos);
-        if (blockState.getBlock() instanceof BlockWeaponTable) {
-            lava = blockState.get(BlockWeaponTable.LAVA);
+        if (blockState.getBlock() instanceof WeaponTableBlock) {
+            lava = blockState.get(WeaponTableBlock.LAVA);
             if (world.getGameTime() % 10 == 4) {
                 isMissingLava = ((HunterWeaponTableContainer) this.inventorySlots).isMissingLava();
             }

@@ -11,13 +11,13 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
 @OnlyIn(Dist.CLIENT)
-public class GuiAltarInfusion extends ContainerScreen {
+public class AltarInfusionScreen extends ContainerScreen {
 
     private static final ResourceLocation altarGuiTextures = new ResourceLocation(REFERENCE.MODID, "textures/gui/altar4.png");
 
     private TileAltarInfusion tileAltar;
 
-    public GuiAltarInfusion(PlayerInventory inv, TileAltarInfusion tile) {
+    public AltarInfusionScreen(PlayerInventory inv, TileAltarInfusion tile) {
         super(tile.getNewInventoryContainer(inv));
         tileAltar = tile;
     }

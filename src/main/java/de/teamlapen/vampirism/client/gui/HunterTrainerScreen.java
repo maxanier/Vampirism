@@ -3,7 +3,7 @@ package de.teamlapen.vampirism.client.gui;
 import de.teamlapen.lib.lib.util.UtilLib;
 import de.teamlapen.vampirism.VampirismMod;
 import de.teamlapen.vampirism.inventory.HunterTrainerContainer;
-import de.teamlapen.vampirism.items.ItemHunterIntel;
+import de.teamlapen.vampirism.items.HunterIntelItem;
 import de.teamlapen.vampirism.network.InputEventPacket;
 import de.teamlapen.vampirism.util.REFERENCE;
 import net.minecraft.client.Minecraft;
@@ -25,12 +25,12 @@ import net.minecraftforge.api.distmarker.OnlyIn;
  * Gui for the Hunter Trainer interaction
  */
 @OnlyIn(Dist.CLIENT)
-public class GuiHunterTrainer extends ContainerScreen {
+public class HunterTrainerScreen extends ContainerScreen {
     private static final ResourceLocation altarGuiTextures = new ResourceLocation(REFERENCE.MODID, "textures/gui/hunter_trainer.png");
     private final HunterTrainerContainer container;
     private Button buttonLevelup;
 
-    public GuiHunterTrainer(HunterTrainerContainer container) {
+    public HunterTrainerScreen(HunterTrainerContainer container) {
         super(container);
         this.container = container;
     }
@@ -87,7 +87,7 @@ public class GuiHunterTrainer extends ContainerScreen {
         String text = null;
         if (!container.getMissingItems().isEmpty()) {
             ItemStack missing = container.getMissingItems();
-            ITextComponent item = missing.getItem() instanceof ItemHunterIntel ? missing.getItem().getDisplayName(missing) : new TranslationTextComponent(missing.getTranslationKey() + ".name");
+            ITextComponent item = missing.getItem() instanceof HunterIntelItem ? missing.getItem().getDisplayName(missing) : new TranslationTextComponent(missing.getTranslationKey() + ".name");
             text = I18n.format("text.vampirism.ritual_missing_items", missing.getCount(), item.getUnformattedComponentText());
         }
         if (text != null) this.fontRenderer.drawSplitString(text, 8, 50, this.xSize - 10, 0x000000);

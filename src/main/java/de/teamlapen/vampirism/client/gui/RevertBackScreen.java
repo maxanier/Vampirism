@@ -11,9 +11,9 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 
 
 @OnlyIn(Dist.CLIENT)
-public class GuiRevertBack extends ConfirmScreen {
+public class RevertBackScreen extends ConfirmScreen {
 
-    public GuiRevertBack() {
+    public RevertBackScreen() {
         super(null, UtilLib.translate("gui.vampirism.revertback.head"), UtilLib.translate("gui.vampirism.revertback.desc"), 0);
     }
 
@@ -29,7 +29,7 @@ public class GuiRevertBack extends ConfirmScreen {
                      */
                     public void onClick(double mouseX, double mouseY) {
                         VampirismMod.dispatcher.sendToServer(new InputEventPacket(InputEventPacket.REVERTBACK, "0"));//TODO Dispatcher
-                        GuiRevertBack.this.mc.displayGuiScreen(null);
+                        RevertBackScreen.this.mc.displayGuiScreen(null);
                     }
                 });
             } else if (button.id == 1) {
@@ -38,7 +38,7 @@ public class GuiRevertBack extends ConfirmScreen {
                      * Called when the left mouse button is pressed over this button. This method is specific to GuiButton.
                      */
                     public void onClick(double mouseX, double mouseY) {
-                        GuiRevertBack.this.mc.displayGuiScreen(null);
+                        RevertBackScreen.this.mc.displayGuiScreen(null);
                     }
                 });
             }

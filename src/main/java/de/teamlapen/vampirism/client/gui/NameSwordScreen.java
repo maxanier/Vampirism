@@ -20,7 +20,7 @@ import java.util.List;
 import java.util.Random;
 
 @OnlyIn(Dist.CLIENT)
-public class GuiNameSword extends Screen {
+public class NameSwordScreen extends Screen {
     /**
      * Suggested sword names.
      * Credits to http://www.fantasynamegenerators.com
@@ -34,7 +34,7 @@ public class GuiNameSword extends Screen {
     private final ItemStack sword;
     private TextFieldWidget nameField;
 
-    public GuiNameSword(ItemStack sword) {
+    public NameSwordScreen(ItemStack sword) {
         this.yes = UtilLib.translate("gui.yes");
         this.no = UtilLib.translate("gui.no");
         this.text1 = UtilLib.translate("gui.vampirism.name_sword.title");
@@ -66,17 +66,17 @@ public class GuiNameSword extends Screen {
             public void onClick(double mouseX, double mouseY) {
                 if (!StringUtils.isBlank(nameField.getText())) {
                     ITextComponent name = new StringTextComponent(nameField.getText());
-                    GuiNameSword.this.sword.setDisplayName(name);
+                    NameSwordScreen.this.sword.setDisplayName(name);
                     VampirismMod.dispatcher.sendToServer(new InputEventPacket(InputEventPacket.NAME_ITEM, name.getUnformattedComponentText()));
                 }
-                GuiNameSword.this.close();
+                NameSwordScreen.this.close();
             }
         });
         this.buttons.add(new OptionButton(1, this.width / 2 - 155 + 160, this.height / 6 + 96, this.no) {
             @Override
             public void onClick(double mouseX, double mouseY) {
                 VampirismMod.dispatcher.sendToServer(new InputEventPacket(InputEventPacket.NAME_ITEM, VampirismVampireSword.DO_NOT_NAME_STRING));
-                GuiNameSword.this.close();
+                NameSwordScreen.this.close();
             }
         });
         this.nameField = new TextFieldWidget(2, this.fontRenderer, this.width / 2 - 155 + 77, this.height / 6 + 70, 155, 12);

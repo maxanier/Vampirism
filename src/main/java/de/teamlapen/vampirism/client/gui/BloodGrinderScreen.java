@@ -11,12 +11,12 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
 @OnlyIn(Dist.CLIENT)
-public class GuiBloodGrinder extends ContainerScreen {
+public class BloodGrinderScreen extends ContainerScreen {
 
     private static final ResourceLocation background = new ResourceLocation(REFERENCE.MODID, "textures/gui/grinder.png");
     private final Container grinderContainer;
 
-    public GuiBloodGrinder(Container inventorySlotsIn) {
+    public BloodGrinderScreen(Container inventorySlotsIn) {
         super(inventorySlotsIn);
         this.grinderContainer = inventorySlotsIn;
     }

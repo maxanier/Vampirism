@@ -2,7 +2,7 @@ package de.teamlapen.vampirism.client.gui;
 
 import de.teamlapen.vampirism.core.ModBlocks;
 import de.teamlapen.vampirism.inventory.HunterTableContainer;
-import de.teamlapen.vampirism.items.ItemPureBlood;
+import de.teamlapen.vampirism.items.PureBloodItem;
 import de.teamlapen.vampirism.util.REFERENCE;
 import net.minecraft.client.gui.screen.inventory.ContainerScreen;
 import net.minecraft.client.renderer.GlStateManager;
@@ -18,11 +18,11 @@ import net.minecraftforge.api.distmarker.OnlyIn;
  * Gui for the hunter table
  */
 @OnlyIn(Dist.CLIENT)
-public class GuiHunterTable extends ContainerScreen {
+public class HunterTableScreen extends ContainerScreen {
     private static final ResourceLocation altarGuiTextures = new ResourceLocation(REFERENCE.MODID, "textures/gui/hunter_table.png");
     private final HunterTableContainer container;
 
-    public GuiHunterTable(HunterTableContainer inventorySlotsIn) {
+    public HunterTableScreen(HunterTableContainer inventorySlotsIn) {
         super(inventorySlotsIn);
         container = inventorySlotsIn;
     }
@@ -54,7 +54,7 @@ public class GuiHunterTable extends ContainerScreen {
             text = I18n.format("text.vampirism.ritual_level_wrong");
         } else if (!container.getMissingItems().isEmpty()) {
             ItemStack missing = container.getMissingItems();
-            ITextComponent item = missing.getItem() instanceof ItemPureBlood ? missing.getDisplayName() : new TranslationTextComponent(missing.getTranslationKey() + ".name");
+            ITextComponent item = missing.getItem() instanceof PureBloodItem ? missing.getDisplayName() : new TranslationTextComponent(missing.getTranslationKey() + ".name");
             text = I18n.format("text.vampirism.ritual_missing_items", missing.getCount(), item.getUnformattedComponentText());
         }
         if (text != null) this.fontRenderer.drawSplitString(text, 8, 50, this.xSize - 10, 0x000000);

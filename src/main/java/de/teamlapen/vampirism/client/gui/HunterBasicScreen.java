@@ -16,7 +16,7 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 
 
 @OnlyIn(Dist.CLIENT)
-public class GuiHunterBasic extends ContainerScreen {
+public class HunterBasicScreen extends ContainerScreen {
     private static final ResourceLocation guiTexture = new ResourceLocation(REFERENCE.MODID, "textures/gui/hunter_basic.png");
 
     private Button buttonLevelup;
@@ -24,7 +24,7 @@ public class GuiHunterBasic extends ContainerScreen {
     private int missing = 0;
     private int timer = 0;
 
-    public GuiHunterBasic(PlayerEntity player) {
+    public HunterBasicScreen(PlayerEntity player) {
         super(new HunterBasicContainer(player.inventory));
         this.container = (HunterBasicContainer) inventorySlots;
     }

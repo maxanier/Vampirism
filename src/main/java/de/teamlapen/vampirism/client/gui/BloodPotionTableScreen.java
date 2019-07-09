@@ -22,14 +22,14 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import java.util.List;
 
 @OnlyIn(Dist.CLIENT)
-public class GuiBloodPotionTable extends ContainerScreen {
+public class BloodPotionTableScreen extends ContainerScreen {
 
     private final ResourceLocation TABLE_GUI_TEXTURES = new ResourceLocation(REFERENCE.MODID, "textures/gui/blood_potion_table.png");
     private final BloodPotionTableContainer container;
     private Button craftBtn;
     private ISound sound;
 
-    public GuiBloodPotionTable(PlayerInventory playerInv, BlockPos pos, World world) {
+    public BloodPotionTableScreen(PlayerInventory playerInv, BlockPos pos, World world) {
         super(new BloodPotionTableContainer(playerInv, pos, world));
         this.container = (BloodPotionTableContainer) inventorySlots;
     }

@@ -13,7 +13,7 @@ import org.lwjgl.glfw.GLFW;
  * Very similar to GuiSleepMP, but for coffin sleep
  */
 @OnlyIn(Dist.CLIENT)
-public class GuiSleepCoffin extends ChatScreen {
+public class SleepCoffinScreen extends ChatScreen {
 
     @Override
     public void initGui() {
@@ -21,7 +21,7 @@ public class GuiSleepCoffin extends ChatScreen {
         this.buttons.add(new Button(1, this.width / 2 - 100, this.height - 40, I18n.format("multiplayer.stopSleeping")) {
             @Override
             public void onClick(double mouseX, double mouseY) {
-                GuiSleepCoffin.this.wakeFromSleep();
+                SleepCoffinScreen.this.wakeFromSleep();
             }
         });
     }
