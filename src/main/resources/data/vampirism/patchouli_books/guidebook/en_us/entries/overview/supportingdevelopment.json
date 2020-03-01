@@ -1,0 +1,17 @@
+{
+  "name": "Support The Development",
+  "icon": "vampirism:vampire_fang",
+  "category": "overview",
+  "sortnum": "6",
+  "pages": [
+    {
+      "type": "text",
+      "title": "Support the development",
+      "text": "Developing this mod takes a lot of time and even I like it most of the time, there are a few things that are absolutely boring and sometimes I wonder if it is worth the trouble. $(br2)"
+    },
+    {
+      "type": "text",
+      "text": "If you want to support the development and help me motivate myself please consider donating. $(br) There is a Patreon page where you can make a monthly donation and also can get some rewards, like appearing in the mod as advanced hunter or vampire. It is also possible to make one time donations on the CurseForge page. $(br) if you cannot or don't want to donate money, you can still checkout the \"Development\" section on how to help."
+    }
+  ]
+}

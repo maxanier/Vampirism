@@ -23,6 +23,7 @@ repositories {
         name 'shinoow'
         url 'https://dl.bintray.com/shinoow/maven/'
     }
+    maven { url 'https://maven.blamejared.com' }
     mavenCentral()
 }
 
@@ -35,6 +36,8 @@ dependencies {
     ])
     compileOnly fg.deobf("mezz.jei:jei-${project.minecraft_version}:${project.jei_version}:api") //API for compile
     runtimeOnly fg.deobf("mezz.jei:jei-${project.minecraft_version}:${project.jei_version}") //Full for runtime
+    compileOnly fg.deobf("vazkii.patchouli:Patchouli:${project.patchouli_version}")
+    runtimeOnly fg.deobf("vazkii.patchouli:Patchouli:${project.patchouli_version}")
 
     //runtimeOnly fg.deobf("curse.maven:angel-of-vengeance:2810906")
     //deobfCompile 'mcp.mobius.waila:Waila:' + config.waila_version

@@ -1,0 +1,20 @@
+{
+  "name": "Troubleshooting",
+  "icon": "vampirism:vampire_fang",
+  "category": "overview",
+  "sortnum": "4",
+  "pages": [
+    {
+      "type": "text",
+      "text": "§c§lIf your game crashes or §cdoes not start, we do NEED a §ccrashreport§r $(br) Without a log file or at at least a extensive description of your problem, we can do absolutely nothing to help you. $(br) So please follow the following steps (If you have questions about the steps themselves, feel free to ask) $(br)"
+    },
+    {
+      "type": "text",
+      "text": "1. Find the Minecraft log file If you use the standard Minecraft launcher, the interesting logfile is .minecraft/logs/fml-client-latest.txt. (How to find the .minecraft folder). In case you have a server, the interesting log file should be logs/fml-server-latest.txt. If you use another launcher, it might have a function to easily upload or locate log files."
+    },
+    {
+      "type": "text",
+      "text": "2. Make a post in the Minecraft Forum thread, describe the problem and include the log either within a spoiler or as a Pastebin of it. If you know what you are doing, you can also create an issue on Github."
+    }
+  ]
+}

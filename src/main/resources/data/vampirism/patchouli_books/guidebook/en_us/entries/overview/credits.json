@@ -1,0 +1,12 @@
+{
+  "name": "Credits",
+  "icon": "vampirism:vampire_fang",
+  "category": "overview",
+  "sortnum": "7",
+  "pages": [
+    {
+      "type": "text",
+      "text": "§lDeveloper: $(br) Maxanier $(br2) §lInactive $(br) §lDevelopers $(br) Mistadon $(br) wildbill22 $(br2) §lTranslators: $(br) §3English (US) $(br) None"
+    }
+  ]
+}

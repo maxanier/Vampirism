@@ -1,0 +1,12 @@
+{
+  "name": "Getting Started",
+  "icon": "vampirism:vampire_fang",
+  "category": "overview",
+  "sortnum": "2",
+  "pages": [
+    {
+      "type": "text",
+      "text": "First of all you have to decide if you want to become a vampire or a hunter. Checkout the other chapters to see what they can do. Then continue to the respective Getting Started Guide"
+    }
+  ]
+}

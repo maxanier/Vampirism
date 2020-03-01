@@ -1,0 +1,12 @@
+{
+  "name": "Development",
+  "icon": "vampirism:vampire_fang",
+  "category": "overview",
+  "sortnum": "5",
+  "pages": [
+    {
+      "type": "text",
+      "text": "This mod is currently developed by Maxanier and translate by many helpful users. If you have some good Java knowledge and want to help please contact him. If not you still can help by translating, giving feedback or creating textures. For more information checkout the link on the side."
+    }
+  ]
+}
