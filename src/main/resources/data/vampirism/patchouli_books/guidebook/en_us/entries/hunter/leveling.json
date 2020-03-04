@@ -1,0 +1,22 @@
+{
+  "name": "guide.vampirism.hunter.leveling",
+  "icon": "vampirism:hunter_intel",
+  "category": "hunter",
+  "sortnum": "2",
+  "pages": [
+    {
+      "type": "vampirism_text",
+      "key": "guide.vampirism.hunter.leveling.intro"
+    },
+    {
+      "type": "vampirism_text",
+      "header": "guide.vampirism.hunter.leveling.to_reach1",
+      "key": "guide.vampirism.hunter.leveling.train1.text"
+    },
+    {
+      "type": "vampirism_text",
+      "header": "guide.vampirism.hunter.leveling.to_reach2",
+      "key": "guide.vampirism.hunter.leveling.train2.text"
+    }
+  ]
+}

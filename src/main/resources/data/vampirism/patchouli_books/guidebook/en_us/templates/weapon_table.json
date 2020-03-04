@@ -1,0 +1,151 @@
+{
+  "processor": "de.teamlapen.vampirism.modcompat.patchouli.WeaponTableRecipeProcessor",
+  "components": [
+    {
+      "type": "header",
+      "text": "#heading",
+      "x": -1,
+      "y": -1
+    },
+    {
+      "type": "image",
+      "image": "vampirismguide:textures/gui/weapon_table_recipe.png",
+      "x": 0,
+      "y": 15,
+      "u": 0,
+      "v": 0,
+      "texture_width": 256,
+      "texture_height": 256,
+      "width": 110,
+      "height": 75
+    },
+    {
+      "type": "item",
+      "guard": "#lava->exists",
+      "item": "minecraft:lava_bucket",
+      "x": 73,
+      "y": 30
+    },
+    {
+      "type": "item",
+      "item": "#input1",
+      "x": 4,
+      "y": 19
+    },
+    {
+      "type": "item",
+      "item": "#input2",
+      "x": 21,
+      "y": 19
+    },
+    {
+      "type": "item",
+      "item": "#input3",
+      "x": 38,
+      "y": 19
+    },
+    {
+      "type": "item",
+      "item": "#input4",
+      "x": 55,
+      "y": 19
+    },
+    {
+      "type": "item",
+      "item": "#input5",
+      "x": 4,
+      "y": 36
+    },
+    {
+      "type": "item",
+      "item": "#input6",
+      "x": 21,
+      "y": 36
+    },
+    {
+      "type": "item",
+      "item": "#input7",
+      "x": 38,
+      "y": 36
+    },
+    {
+      "type": "item",
+      "item": "#input8",
+      "x": 55,
+      "y": 36
+    },
+    {
+      "type": "item",
+      "item": "#input9",
+      "x": 4,
+      "y": 53
+    },
+    {
+      "type": "item",
+      "item": "#input10",
+      "x": 21,
+      "y": 53
+    },
+    {
+      "type": "item",
+      "item": "#input11",
+      "x": 38,
+      "y": 53
+    },
+    {
+      "type": "item",
+      "item": "#input12",
+      "x": 55,
+      "y": 53
+    },
+    {
+      "type": "item",
+      "item": "#input13",
+      "x": 4,
+      "y": 70
+    },
+    {
+      "type": "item",
+      "item": "#input14",
+      "x": 21,
+      "y": 70
+    },
+    {
+      "type": "item",
+      "item": "#input15",
+      "x": 38,
+      "y": 70
+    },
+    {
+      "type": "item",
+      "item": "#input16",
+      "x": 55,
+      "y": 70
+    },
+    {
+      "type": "item",
+      "item": "#output",
+      "link_recipe": true,
+      "x": 90,
+      "y": 43
+    },
+    {
+      "type": "text",
+      "guard": "#level->exists",
+      "text": "#level",
+      "y": 89
+    },
+    {
+      "type": "text",
+      "guard": "#level->exists->inv",
+      "text": "#skills",
+      "y": 89
+    },
+    {
+      "type": "text",
+      "guard": "#level->exists",
+      "text": "#skills",
+      "y": 99
+    }
+  ]
+}

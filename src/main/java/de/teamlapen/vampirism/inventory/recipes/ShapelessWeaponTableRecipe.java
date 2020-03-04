@@ -16,6 +16,8 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
 import net.minecraftforge.registries.ForgeRegistryEntry;
 
+import javax.annotation.Nonnull;
+
 /**
  * @author Cheaterpaul
  */
@@ -28,11 +30,12 @@ public class ShapelessWeaponTableRecipe implements ICraftingRecipe, IWeaponTable
     private final NonNullList<Ingredient> recipeItems;
     private final ItemStack recipeOutput;
     private final int requiredLevel;
+    @Nonnull
     private final ISkill[] requiredSkills;
     private final int requiredLava;
     private final boolean isSimple;
 
-    public ShapelessWeaponTableRecipe(ResourceLocation recipeId, String group, NonNullList<Ingredient> ingredients, ItemStack result, int level, int lava, ISkill[] skills) {
+    public ShapelessWeaponTableRecipe(ResourceLocation recipeId, String group, NonNullList<Ingredient> ingredients, ItemStack result, int level, int lava, @Nonnull ISkill[] skills) {
         this.id = recipeId;
         this.group = group;
         this.recipeItems = ingredients;
@@ -81,6 +84,7 @@ public class ShapelessWeaponTableRecipe implements ICraftingRecipe, IWeaponTable
         return requiredLevel;
     }
 
+    @Nonnull
     @Override
     public ISkill[] getRequiredSkills() {
         return requiredSkills;

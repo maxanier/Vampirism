@@ -57,7 +57,7 @@ public class WeaponTableRecipeCategory implements IRecipeCategory<IWeaponTableRe
             y += minecraft.fontRenderer.FONT_HEIGHT + 2;
         }
         ISkill[] requiredSkills = recipe.getRequiredSkills();
-        if (requiredSkills != null && requiredSkills.length > 0) {
+        if (requiredSkills.length > 0) {
             StringBuilder skills = new StringBuilder();
             for (ISkill skill : recipe.getRequiredSkills()) {
                 skills.append(UtilLib.translate(skill.getTranslationKey())).append(" ");

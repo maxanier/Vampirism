@@ -1,0 +1,17 @@
+{
+  "name": "guide.vampirism.hunter.getting_started",
+  "icon": "vampirism:injection_garlic",
+  "category": "hunter",
+  "sortnum": "1",
+  "pages": [
+    {
+      "type": "vampirism_text",
+      "header": "guide.vampirism.hunter.getting_started",
+      "key": "guide.vampirism.hunter.getting_started.become"
+    },
+    {
+      "type": "vampirism_text",
+      "key": "guide.vampirism.hunter.getting_started.as_hunter"
+    }
+  ]
+}

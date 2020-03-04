@@ -1,0 +1,32 @@
+{
+  "processor": "de.teamlapen.vampirism.modcompat.patchouli.TextProcessor",
+  "components": [
+    {
+      "type": "text",
+      "text": "#parsedText",
+      "guard": "#header->exists->inv",
+      "x": -1,
+      "y": -1
+    },
+    {
+      "type": "header",
+      "text": "#header",
+      "guard": "#header->exists",
+      "x": -1,
+      "y": 1
+    },
+    {
+      "type": "separator",
+      "guard": "#header->exists",
+      "x": -1,
+      "y": -1
+    },
+    {
+      "type": "text",
+      "text": "#parsedText",
+      "guard": "#header->exists",
+      "x": -1,
+      "y": 15
+    }
+  ]
+}

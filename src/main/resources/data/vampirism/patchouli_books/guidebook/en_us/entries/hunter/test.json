@@ -1,0 +1,19 @@
+{
+  "name": "Test",
+  "icon": "vampirism:vampire_fang",
+  "category": "Test",
+  "sortnum": "7",
+  "pages": [
+    {
+      "type": "weapon_table",
+      "recipe": "vampirism:weapontable/armor_of_swiftness_enhanced_chest"
+    },
+    {
+      "type": "weapon_table",
+      "recipe": "vampirism:weapontable/crossbow_arrow_spitfire"
+    }
+  ]
+}
+
+
+
