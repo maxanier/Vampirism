@@ -1,4 +1,4 @@
-Vampirism for Minecraft 1.14 - Latest branch [![](http://cf.way2muchnoise.eu/short_233029_downloads.svg)](https://minecraft.curseforge.com/projects/vampirism-become-a-vampire) [![Build Status](https://travis-ci.org/TeamLapen/Vampirism.svg?branch=1.14)](https://travis-ci.org/TeamLapen/Vampirism)  [![License: LGPL v3](https://img.shields.io/badge/License-LGPL%20v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)
+Vampirism for Minecraft 1.14 - Stable branch 1.6.x [![](http://cf.way2muchnoise.eu/short_233029_downloads.svg)](https://minecraft.curseforge.com/projects/vampirism-become-a-vampire) [![Build Status](https://travis-ci.org/TeamLapen/Vampirism.svg?branch=1.14)](https://travis-ci.org/TeamLapen/Vampirism)  [![License: LGPL v3](https://img.shields.io/badge/License-LGPL%20v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)
 ============================================
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://maxanier.de)  
 
